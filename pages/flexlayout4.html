@@ -1,0 +1,92 @@
+<!doctype html>
+<title>
+    Sample Demo Flexbox Layout 4
+</title>
+
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #85e474;
+    flex: 1;
+    font-weight: bold;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 10vh;
+    font-weight: bold;
+    background: rgb(169, 210, 224);
+  }
+  .inner-row aside {
+    background: rgb(230, 230, 111);
+    flex: 1;
+    font-weight: bold;
+  }
+  header, footer {
+    background: rgb(210, 125, 250);
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+    
+  <nav class="outer-col-1"><p>Navigation bar</p></nav>
+  <div class="outer-col-2">
+  	<header>
+        <h1>HEADER - Sample Flexbox Example Layout 4</h1>
+      </header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <section class="mainContentItem">
+            <article>
+                <h2>
+                    First article
+                </h2>
+                <p>Web content is dominated by the "page" concept, its beginnings in an academic setting, and in a setting dominated by type-written pages, the idea of the web was to link directly from one academic paper to another academic paper. This was a completely revolutionary idea in the late 1980s and early 1990s when the best a link could be made was to cite a reference in a typewritten paper and name that reference either at the bottom of the page or on the last page of the academic paper.
+                    When it was possible for any person to write and own a Mosaic page, the concept of a "home page" blurred the idea of a page.[2] It was possible for anyone to own a "Web page" or a "home page" which in many cases the website contained many physical pages in spite of being called "a page". People often cited their "home page" to provide credentials, links to anything that a person supported, or any other individual content a person wanted to publish.</p>
+            </article> 
+            <article>
+                <h2>
+                 Second article
+             </h2>
+             <p>Web content is dominated by the "page" concept, its beginnings in an academic setting, and in a setting dominated by type-written pages, the idea of the web was to link directly from one academic paper to another academic paper. This was a completely revolutionary idea in the late 1980s and early 1990s when the best a link could be made was to cite a reference in a typewritten paper and name that reference either at the bottom of the page or on the last page of the academic paper.
+                When it was possible for any person to write and own a Mosaic page, the concept of a "home page" blurred the idea of a page.[2] It was possible for anyone to own a "Web page" or a "home page" which in many cases the website contained many physical pages in spite of being called "a page". People often cited their "home page" to provide credentials, links to anything that a person supported, or any other individual content a person wanted to publish.</p>
+         </article>
+         <article>
+             <h2>
+                 Third   article
+             </h2>
+             <p>Web content is dominated by the "page" concept, its beginnings in an academic setting, and in a setting dominated by type-written pages, the idea of the web was to link directly from one academic paper to another academic paper. This was a completely revolutionary idea in the late 1980s and early 1990s when the best a link could be made was to cite a reference in a typewritten paper and name that reference either at the bottom of the page or on the last page of the academic paper.
+                When it was possible for any person to write and own a Mosaic page, the concept of a "home page" blurred the idea of a page.[2] It was possible for anyone to own a "Web page" or a "home page" which in many cases the website contained many physical pages in spite of being called "a page". People often cited their "home page" to provide credentials, links to anything that a person supported, or any other individual content a person wanted to publish.Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </article>
+        </section>
+        
+
+  		<footer>Footer</footer>
+      </div>
+      
+    	<aside><div class="center"><p>  Aside Right</p></div></aside>
+    </div>
+  </div>
+</body>
