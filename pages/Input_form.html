@@ -14,11 +14,7 @@
             <input type="text" id="text" name="text" required>
             <error-output class="text-error" for="text"></error-output>
         </div>
-        <div>
-            <label for="text">Last Name:</label>
-            <input type="text" id="text" name="text"  required>
-            <error-output class="text-error" for="text"></error-output> 
-        </div>
+    
         <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -42,13 +38,14 @@
          const text=document.querySelector('#text');
          const textError=document.querySelector('.text-error');
          text.addEventListener('input', function(){
-             let namRegex= new RegExp(/^[A-Z][a-z]{2,}$/);
+             var namRegex = RegExp(/^[A-Z][a-z]{2,}$/);
              if(namRegex.test(text.value))
               textError.textContent="";
               else
               textError.textContent="Name is incorrect";
-         })
+         });
+        
+         
     </script>
-
 </body>
 </html>
