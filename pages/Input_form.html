@@ -62,6 +62,15 @@
               else
               numberError.textContent="Phone number is invalid";
          };
+         const pwd=document.querySelector('#pwd');
+         const pwdError=document.querySelector('.pwd-error');
+         pwd.oninput = function() {
+             var pwdRegex = RegExp(/^(?=.*[A-Z])(?=.*[0-9])(?!(?:.*[@$!_%*#?&]){2})[a-zA-Z0-9@$!_%*#?&]{8,}$/);
+             if(pwdRegex.test(pwd.value))
+             pwdError.textContent="";
+              else
+              pwdError.textContent="Password wrong format";
+         };
         
          
     </script>
