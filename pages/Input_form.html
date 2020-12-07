@@ -53,6 +53,15 @@
               else
               emailError.textContent="Email is invalid";
          };
+         const number=document.querySelector('#number');
+         const numberError=document.querySelector('.number-error');
+         number.oninput = function() {
+             var numberRegex = RegExp(/^[1-9]{1}[0-9]{1}[1-9]{1}[0-9]{9}$/);
+             if(numberRegex.test(number.value))
+             numberError.textContent="";
+              else
+              numberError.textContent="Phone number is invalid";
+         };
         
          
     </script>
