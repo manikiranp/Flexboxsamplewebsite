@@ -44,6 +44,15 @@
               else
               textError.textContent="Name is incorrect";
          });
+         const email=document.querySelector('#email');
+         const emailError=document.querySelector('.email-error');
+         email.oninput = function() {
+             var emailRegex = RegExp(/^[A-Z][a-z]{2,}$/);
+             if(emailRegex.test(email.value))
+             emailError.textContent="";
+              else
+              emailError.textContent="Email is invalid";
+         };
         
          
     </script>
