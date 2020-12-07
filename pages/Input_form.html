@@ -47,7 +47,7 @@
          const email=document.querySelector('#email');
          const emailError=document.querySelector('.email-error');
          email.oninput = function() {
-             var emailRegex = RegExp(/^[A-Z][a-z]{2,}$/);
+             var emailRegex = RegExp(/^([a-z]+)([_+.-]?)([a-z0-9]+)@([A-Za-z0-9]+).([a-z]{2,3})((.[a-z]{2,3})?)$/);
              if(emailRegex.test(email.value))
              emailError.textContent="";
               else
